@@ -73,10 +73,14 @@ export default function Home() {
                   }}>
                     <img className="books" src={e.imageLinks.thumbnail} alt={e.title} />
                     <p>{e.title}</p>
+                    <div className="rate-div">
+
                     <p className="rate">
                       {e.averageRating ? e.averageRating : "4.69"}⭐
                     </p>
+                    <p className="price">Free</p>
                   </div>
+                    </div>
                 );
               })}
           </div>
